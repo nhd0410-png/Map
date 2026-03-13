@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bản đồ Chiến thắng Bạch Đằng</title>
+
+<style>
+
+body{
+margin:0;
+background:#eaeaea;
+font-family:Arial;
+display:flex;
+justify-content:center;
+}
+
+.map{
+position:relative;
+max-width:1200px;
+width:95%;
+}
+
+.bg{
+width:100%;
+display:block;
+}
+
+/* vị trí ảnh */
+
+.place{
+position:absolute;
+width:110px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.place img.thumb{
+width:110px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.35);
+border:2px solid #fcf3ca;
+}
+
+.place:hover{
+transform:scale(1.35);
+z-index:10;
+}
+
+/* số */
+
+.num{
+position:absolute;
+top:-12px;
+left:-12px;
+background:#fcf3ca;
+border-radius:50%;
+width:26px;
+height:26px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+box-shadow:0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* tên */
+
+.title{
+text-align:center;
+font-size:12px;
+font-family:Tahoma, Geneva, sans-serif;
+margin-top:4px;
+background:#fcf3ca;
+border-radius:6px;
+padding:3px;
+text-transform:uppercase;
+font-weight:bold;
+}
+
+/* QR */
+
+.qr{
+position:absolute;
+width:60px;
+opacity:0;
+transition:.3s;
+}
+
+.place:hover .qr{
+opacity:1;
+}
+
+.qr.left{
+right:120px;
+top:10px;
+}
+
+.qr.right{
+left:122px;
+top:10px;
+}
+
+/* đường */
+
+.lines{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+}
+
+.lines polyline{
+stroke:#fcf3ca;
+stroke-width:2;
+stroke-dasharray:6;
+fill:none;
+}
+
+@media(max-width:800px){
+.place{width:100px}
+.qr{width:80px}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="map">
+
+<img src="nen.png" class="bg">
+
+<svg class="lines">
+
+<polyline points="140,80 230 80 230,150"/>
+<polyline points="70,400 70,300"/>
+<polyline points="320,400 320,320"/>
+<polyline points="480,400 480,350"/>
+<polyline points="420,180 590,180 590,280"/>
+<polyline points="650,390 650,310"/>
+<polyline points="800,480 800,320 740,320"/>
+<polyline points="600,60 660,60 660,270"/>
+<polyline points="780,60 820,60 820,200"/>
+<polyline points="1120,280 980,280"/>
+<polyline points="970,60 920,60 920,170"/>
+<polyline points="980,560 1080,560"/>
+<polyline points="1130,420 1130,500"/>
+
+</svg>
+
+
+
+<div class="place" style="top:20px; left:30px;">
+<div class="num">1</div>
+<img src="Ảnh/1.jpg" class="thumb">
+<div class="title">Cổng chào</div>
+<a href="https://maps.app.goo.gl/BBFm2REtcshkaqCa8" target="_blank"><img src="qr/Cổng khu di tích Bạch Đằng Giang.png" class="qr left"/></a>
+<a href="https://nhd0410-png.github.io/BDG_FINAL/BDG/OVR/index.html" target="_blank"><img src="qr/Tổng Quan.jpg" class="qr right"></a>
+</div>
+
+<div class="place" style="bottom:120px; left:20px;">
+<div class="num">2</div>
+<img src="Ảnh/2.png" class="thumb">
+<div class="title">Bảo tàng lịch sử</div>
+<a href="https://maps.app.goo.gl/vD9BFLmyZCXAXPGBA" target="_blank"><img src="qr/Bảo tàng lịch sử chiến thắng sông Bạch Đằng.png" class="qr left"/></a>
+<!--<a href="" target="_blank"><img src="qr.jpg" class="qr right"></a>-->
+</div>
+
+<div class="place" style="    bottom: 120px;
+    left: 253px;">
+<div class="num">3</div>
+<img src="Ảnh/3.png" class="thumb">
+<div class="title">Đền thờ Hoàng đế Lê Đại Hành</div>
+<a href="https://maps.app.goo.gl/FQdFZ6XrvrEcCaFy9" target="_blank"><img src="qr/Đền thờ Hoàng đế Lê Đại Hành.png" class="qr left"/></a>
+<a href="https://nhd0410-png.github.io/BDG_FINAL/BDG/OVR/LDH_WEB.html" target="_blank"><img src="qr/LDH.jpg" class="qr right"></a>
+</div>
+
+<div class="place"  style="    bottom: 120px;
+    left: 428px;">>
+<div class="num">4</div>
+<img src="Ảnh/4.webp" class="thumb">
+<div class="title">Chùa Trúc Lâm Tự Tràng Kênh</div>
+<a href="https://maps.app.goo.gl/DLbL4q128cAk9GFP8" target="_blank"><img src="qr/Chùa Tràng Kênh.png" class="qr left"/></a>
+<a href="https://nhd0410-png.github.io/BDG_FINAL/BDG/OVR/TLT_WEB.html" target="_blank"><img src="qr/TLT.jpg" class="qr right"></a>
+</div>
+
+<div class="place" style="top: 163px;
+    left: 347px;">
+<div class="num">5</div>
+<img src="Ảnh/5.webp" class="thumb">
+<div class="title">Đền thờ Trần Hưng Đạo</div>
+<a href="https://maps.app.goo.gl/wsCU2dLkM38qMmTD9" target="_blank"><img src="qr/Đền thờ Trần Hưng Đạo.png" class="qr left"/></a>
+<a href="https://nhd0410-png.github.io/BDG_FINAL/BDG/TQT/THT_WEB.html" target="_blank"><img src="qr/THD.jpg" class="qr right"></a>
+</div>
+
+<div class="place" style="    top: 393px;
+    left: 600px;">
+<div class="num">6</div>
+<img src="Ảnh/6.webp" class="thumb">
+<div class="title">Đền thờ Chủ Tịch Hồ Chí Minh</div>
+<a href="https://maps.app.goo.gl/2hqHimQAZizJq4MA9" target="_blank"><img src="qr/Đền thờ Chủ tịch Hồ Chí Minh.png" class="qr left"/></a>
+<a href="https://nhd0410-png.github.io/BDG_FINAL/BDG/HCM/HCM_WEB.html" target="_blank"><img src="qr/HCM.jpg" class="qr right"></a>
+</div>
+
+<div class="place" style="top: 476px;
+    left: 739px;">
+<div class="num">7</div>
+<img src="Ảnh/7.webp" class="thumb">
+<div class="title">Đền thờ Đức Vương Ngô Quyền</div>
+<a href="https://maps.app.goo.gl/oBibZjARwKt9asFp9 " target="_blank"><img src="qr/Đền thờ Đức vương Ngô Quyền.png" class="qr left"/></a>
+<a href="https://nhd0410-png.github.io/BDG_FINAL/BDG/NQ/NQ_WEB.html" target="_blank"><img src="qr/NQ.jpg" class="qr right"></a>
+</div>
+
+<div class="place" style="    top: 20px;
+    left: 500px;
+">
+<div class="num">8</div>
+<img src="Ảnh/8.webp" class="thumb">
+<div class="title">Đền thờ Thánh Mẫu</div>
+<a href="https://maps.app.goo.gl/ASQ5hM53U5FmwtJz7" target="_blank"><img src="qr/Đền thờ Thánh mẫu.png" class="qr left"/></a>
+<a href="https://nhd0410-png.github.io/BDG_FINAL/BDG/TMOM/TMOM.html" target="_blank"><img src="qr/TMOM.jpg" class="qr right"></a>
+</div>
+
+<div class="place" style="top: 30px;
+    right: 420px;">
+<div class="num">9</div>
+<img src="Ảnh/9.jpg" class="thumb">
+<div class="title">Bạch Đằng Vân Phong Tự</div>
+<a href="https://maps.app.goo.gl/PwwS4Neq2fjq9RxX6 " target="_blank"><img src="qr/Bạch Đằng Vân Phong Tự.png" class="qr left"/></a>
+<!--<a href="" target="_blank"><img src="qr/Bạch Đằng Vân Phong Tự.png" class="qr right"></a>-->
+</div>
+<div class="place" style="top: 30px;
+    right: 120px;">
+<div class="num">10</div>
+<img src="Ảnh/hqt.jpg" class="thumb">
+<div class="title">Bạch Đằng Hộ Quốc Tự</div>
+<a href="https://maps.app.goo.gl/xe5iWJCK1XGFbjoG7 " target="_blank"><img src="qr/Bạch Đằng Hộ Quốc Tự.png" class="qr left"/></a>
+<!--<a href="" target="_blank"><img src="qr/Bạch Đằng Hộ Quốc Tự.png" class="qr right"></a>-->
+</div>
+
+<div class="place" style="top: 260px;
+    right: 30px;">
+<div class="num">11</div>
+<img src="Ảnh/10.jpg" class="thumb">
+<div class="title">Bia đá Hịch Tướng Sĩ</div>
+<a href="https://maps.app.goo.gl/G2c2UdQ3shMV3gGeA" target="_blank"><img src="qr/Bia đá Hịch Tướng Sĩ.png" class="qr left"/></a>
+<a href="https://nhd0410-png.github.io/BDG_FINAL/BDG/HTS/HTS_WEB.html" target="_blank"><img src="qr/HTS.jpg" class="qr right"></a>
+</div>
+
+<div class="place" style="    top: 383px;
+    left: 892px;">
+<div class="num">12</div>
+<img src="Ảnh/11.jpg" class="thumb">
+<div class="title">Miếu Thủy Thần</div>
+<a href="https://maps.app.goo.gl/TKzD4gCynbYTHeg56" target="_blank"><img src="qr/Miếu Thủy Thần.png" class="qr left"/></a>
+<!--<a href="" target="_blank"><img src="qr.jpg" class="qr right"></a>-->
+</div>
+
+<div class="place" style="    bottom: 10px;
+    right: 212px;">
+<div class="num">13</div>
+<img src="Ảnh/12.jpg" class="thumb">
+<div class="title">Quảng trường chiến thắng Bạch Đằng</div>
+<a href="https://maps.app.goo.gl/22zL2XQWupEGAPDq5" target="_blank"><img src="qr/Quảng trường Chiến thắng Bạch Đằng.png" class="qr left"/></a>
+<a href="https://nhd0410-png.github.io/BDG_FINAL/BDG/SoV/SoV_WEB.html" target="_blank"><img src="qr/SoV.jpg" class="qr right"></a>
+</div>
+
+<div class="place" style="bottom: 165px;right: 20px;">
+<div class="num">14</div>
+<img src="Ảnh/13.webp" class="thumb">
+<div class="title">Bãi cọc</div>
+<!--<a href="" target="_blank"><img src="qr.jpg" class="qr left"/></a>
+<a href="" target="_blank"><img src="qr.jpg" class="qr right"></a>-->
+</div>
+
+
+</div>
+</body>
+</html>
